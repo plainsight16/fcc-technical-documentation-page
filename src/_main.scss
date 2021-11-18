@@ -1,0 +1,43 @@
+main{
+   grid-row:2/4;
+    @include breakpointsUp(tablet){
+        grid-column:2/4;
+        grid-row:1/1;
+    }
+    padding:rem(20);
+    article{
+        font-size:0.96rem;
+        color:#4d4e53;
+
+        p{
+            margin: rem(15) 0;
+        }
+        ul{
+            list-style-type: disc;
+        }
+        li{
+            margin: rem(15) 0 0 rem(20);
+            font-size: inherit;
+        }
+        
+        code{
+            display:block;
+            text-align:left;
+            line-height: 2;
+            padding:rem(15);
+            margin:rem(10);
+            background-color:#f7f7f7;
+            border-radius: rem(5);
+            font-family: monospace;
+            font-size: inherit;
+            color: inherit;
+            font-size:inherit;
+        }
+        li ul{
+            list-style-type: circle;
+        }
+    }
+   
+     
+    
+}

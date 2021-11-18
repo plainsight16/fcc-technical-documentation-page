@@ -12,8 +12,9 @@ body{
 h1,h2,h3{
     margin:0;
 }
-h1,h2{
+h1,h2, header{
     font-size: 1.8rem;
+    font-weight:400;
 }
 p{
     font-size:0.96rem;
@@ -22,6 +23,7 @@ p{
 a{
     text-decoration: none;
     color:inherit;
+    cursor:pointer;
 }
 button{
     outline: none;
@@ -29,4 +31,21 @@ button{
 }
 .container{
     padding:rem(20);
+}
+ul{
+    list-style-type: none;
+}
+
+.grid{
+    display: grid;
+    gap:0;
+   grid-template-columns: 1fr;
+   grid-template-rows: rem(275) 1fr 1fr;
+    @include breakpointsUp(tablet){
+        grid-template-columns: rem(300) 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+article{
+    margin:rem(15);
 }
